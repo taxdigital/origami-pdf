@@ -31,9 +31,6 @@ DIRECTORIES
     Core scripts used to parse a PDF file. All objects and features are
     provided here.
 
-  ``samples/``
-    Many samples, mostly sorted to generate specially crafted PDFs.
-
   ``bin/``
     Useful tools based on Origami.
 
@@ -64,4 +61,3 @@ NOTES
   problem, feel free to report it by mail at <guillaume [at] security-labs
   [dot] org>, with a short explanation of what you did and any necessary PDF
   documents. Thanks.
-

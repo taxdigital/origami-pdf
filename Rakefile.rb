@@ -8,19 +8,19 @@ require 'rubygems/package_task'
 spec = Gem::Specification.new do |s|
   s.name       = "origami"
   s.version    = "1.2.5"
-  s.author     = "Guillaume Delugre"
+  s.author     = "Guillaume Delugre
   s.email      = "guillaume at security-labs dot org"
   s.homepage   = "http://code.google.com/p/origami-pdf"
   s.platform   = Gem::Platform::RUBY
-  
+
   s.summary    = "Origami aims at providing a scripting tool to generate and analyze malicious PDF files."
   s.description = <<DESC
-Origami is a PDF-compliant parser. This is not a PDF rendering library, it aims at providing a scripting tool to generate and analyze malicious PDF files. 
+Origami is a PDF-compliant parser. This is not a PDF rendering library, it aims at providing a scripting tool to generate and analyze malicious PDF files.
 As well, it can be used to create on-the-fly customized PDFs, or to inject (evil) code into already existing documents.
 DESC
 
   s.files             = FileList[
-    'README', 'COPYING.LESSER', "{lib,bin,tests,samples,templates}/**/*", "bin/shell/.irbrc"
+    'README', 'COPYING.LESSER', "{lib,bin,tests,templates}/**/*", "bin/shell/.irbrc"
   ].exclude(/\.pdf$/, /\.key$/, /\.crt$/, /\.conf$/).to_a
 
   s.require_path      = "lib"
@@ -51,7 +51,7 @@ end
 desc "Run the test suite"
 Rake::TestTask.new do |t|
  t.verbose = true
- t.libs << "test" 
+ t.libs << "test"
  t.test_files = FileList["test/ts_pdf.rb"]
 end
 
